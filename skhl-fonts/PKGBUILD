@@ -1,0 +1,21 @@
+# Maintainer: Sean Liao <seankhliao@gmail.com>
+pkgname=skhl-fonts
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="sean's favourite fonts"
+arch=('any')
+url="https://github.com/seankhliao/arch-packages"
+license=('MIT')
+depends=(
+    'adobe-source-han-sans-tw-fonts'
+    'noto-fonts-cjk'
+    'noto-fonts-emoji'
+    'ttf-courier-prime'
+    'ttf-google-fonts-git'
+    'ttf-dejavu'
+    'ttf-dejavu-sans-code'
+)
+optdepends=(
+    'ttf-ms-fonts'
+    'ttf-tw'
+)

@@ -1,0 +1,23 @@
+# Maintainer: Sean Liao <seankhliao@gmail.com>
+pkgname=skhl-editor
+pkgver=0.0.2
+pkgrel=1
+pkgdesc="sean's editor"
+arch=('any')
+url="https://github.com/seankhliao/arch-packages"
+license=('MIT')
+depends=(
+    'python-neovim'
+    'neovim'
+)
+optdepends=(
+    'prettier'
+    'bash-language-server'
+    'dockerfile-language-server-bin'
+    'python-language-server'
+    'vscode-css-languageserver-bin'
+    'vscode-html-languageserver-bin'
+    'vscode-json-languageserver-bin'
+    'xml-language-server-git'
+    'yaml-language-server-bin'
+)

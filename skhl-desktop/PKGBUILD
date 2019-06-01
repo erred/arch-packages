@@ -1,0 +1,24 @@
+# Maintainer: Sean Liao <seankhliao@gmail.com>
+pkgname=skhl-desktop
+pkgver=0.0.4
+pkgrel=1
+pkgdesc="sean's desktop things"
+arch=('any')
+url="https://github.com/seankhliao/arch-packages"
+license=('MIT')
+depends=(
+    'sway'
+    'i3status'
+    'bemenu'
+    'dunst'
+    'grim'
+    'slurp'
+    'google-chrome-dev'
+    'kitty'
+    'light'
+    'alsa-utils'
+    'playerctl'
+)
+optdepends=(
+    'spotify'
+)

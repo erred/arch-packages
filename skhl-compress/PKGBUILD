@@ -1,0 +1,17 @@
+# Maintainer: Sean Liao <seankhliao@gmail.com>
+pkgname=skhl-compress
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="sean's compression tools"
+arch=('any')
+url="https://github.com/seankhliao/arch-packages"
+license=('MIT')
+depends=(
+    'brotli'
+    'gzip'
+    'lzip'
+    'tar'
+    'unrar'
+    'unzip'
+    'zip'
+)

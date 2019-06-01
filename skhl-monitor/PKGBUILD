@@ -1,0 +1,17 @@
+# Maintainer: Sean Liao <seankhliao@gmail.com>
+pkgname=skhl-monitor
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="sean's monitoring tools"
+arch=('any')
+url="https://github.com/seankhliao/arch-packages"
+license=('MIT')
+depends=(
+    'htop'
+    'iftop'
+    'iotop'
+    'iputils'
+    'lsof'
+    'sysstat'
+    'traceroute'
+)
