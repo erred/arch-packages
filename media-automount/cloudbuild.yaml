@@ -4,7 +4,7 @@ steps:
       - "-c"
       - >-
         chmod 4755 /bin/sudo &&
-        echo 'nobody ALL=(ALL) NOPASSWD: /bin/sudo' >> /etc/sudoers &&
+        echo 'nobody ALL=(ALL) NOPASSWD: /bin/pacman' >> /etc/sudoers &&
         cp -r /workspace/media-automount /tmp/build &&
         chmod -R a=rwx /tmp/build &&
         cd /tmp/build && 
