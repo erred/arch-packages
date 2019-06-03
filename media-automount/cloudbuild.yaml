@@ -1,0 +1,6 @@
+steps:
+  - name: "gcr.io/$PROJECT_ID/makepkg"
+  # - name: "gcr.io/cloud-builders/gsutil"
+  #   args:
+  #     - "cp"
+  #     - ""
