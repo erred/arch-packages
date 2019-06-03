@@ -1,11 +1,8 @@
 steps:
-  - name: "gcr.io/cloud-builders/gsutil"
-    entrypoint: "/bin/sh"
+  - name: "gcr.io/$PROJECT_ID/makepkg"
     args:
       - "-c"
-      - "chmod -R +w /workspace"
-  - name: "gcr.io/$PROJECT_ID/makepkg"
-  # - name: "gcr.io/cloud-builders/gsutil"
-  #   args:
-  #     - "cp"
-  #     - ""
+      - >-
+        chmod -R +w /workspace && \
+        sudo -u user makepkg && \
+        ls -al
