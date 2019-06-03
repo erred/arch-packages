@@ -3,6 +3,8 @@ steps:
     args:
       - "-c"
       - >-
+        echo '%sudo ALL=(ALL) ALL' >> /etc/sudoers &&
+        groupadd sudo &&
         usermod -a -G sudo nobody &&
         cp -r /workspace/media-automount /tmp/build &&
         chmod -R a=rwx /tmp/build &&
