@@ -3,7 +3,7 @@ steps:
     entrypoint: "/bin/sh"
     args:
       - "-c"
-      - "chmod +w /workspace"
+      - "chmod -R +w /workspace"
   - name: "gcr.io/$PROJECT_ID/makepkg"
   # - name: "gcr.io/cloud-builders/gsutil"
   #   args:
