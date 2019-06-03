@@ -3,6 +3,10 @@ steps:
     args:
       - "-c"
       - >-
-        chmod -R +w /workspace &&
-        sudo -u user makepkg &&
+        cp /workspace/media-automount/* /tmp/build &&
+        chmod -R a=rwx /tmp/build &&
+        cd /tmp/build && 
+        sudo -u nobody makepkg &&
+        cp *.pkg.tar* /workspace/media-automount &&
+        cd /workspace/media-automount && 
         ls -al
