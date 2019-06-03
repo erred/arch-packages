@@ -3,6 +3,6 @@ steps:
     args:
       - "-c"
       - >-
-        chmod -R +w /workspace && \
-        sudo -u user makepkg && \
+        chmod -R +w /workspace &&
+        sudo -u user makepkg &&
         ls -al
