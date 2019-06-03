@@ -8,7 +8,7 @@ steps:
         cp -r /workspace/media-automount /tmp/build &&
         chmod -R a=rwx /tmp/build &&
         cd /tmp/build && 
-        sudo -u nobody makepkg -s &&
+        sudo -u nobody makepkg -s --needed --noconfirm &&
         cp *.pkg.tar* /workspace/media-automount &&
         cd /workspace/media-automount && 
         ls -al
