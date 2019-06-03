@@ -1,6 +1,6 @@
 steps:
   - name: "gcr.io/cloud-builders/gsutil"
-    entrypoint: "/usr/bin/bash"
+    entrypoint: "/bin/sh"
     args:
       - "-c"
       - "chmod +w /workspace"
