@@ -8,6 +8,7 @@ url="https://github.com/seankhliao/arch-packages"
 license=('MIT')
 depends=(
     'sway'
+    'swaybg'
     'i3status'
     'bemenu'
     'dunst'
